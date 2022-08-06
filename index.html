@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo.svg" type="image/png">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Midas</title>
+</head>
+    <body>
+        <header class="header">
+    <div class="header__container container">
+        <a href="index.html" class="header__logo-wrapper logo-wrapper">
+            <svg class="header__logo logo" viewBox="0 0 42 43" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_706_731)">
+                <path d="M10.5 37.3667L15.75 34.7417C17.7188 36.0542 19.3594 36.7104 21 36.7104C22.6406 36.7104 24.2812 36.0542 26.25 34.7417L31.5 37.3667L22.173 42.0261C21.4348 42.3952 20.5652 42.3952 19.827 42.0261L10.5 37.3667Z" fill="#E7ECFE"/>
+                <path d="M36.75 8.49141L31.5 11.1164L31.4836 11.1082C24.8391 7.62188 17.0625 7.62188 10.5 11.1082L5.25 8.49141L19.827 1.20703C20.5652 0.837891 21.4348 0.837891 22.173 1.20703L36.75 8.49141Z" fill="#FFE071"/>
+                <mask id="mask0_706_731" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="5" y="26" width="11" height="9">
+                <path d="M15.75 29.4751L5.25 34.7251V29.4751L10.5 26.8501L15.75 29.4751Z" fill="url(#paint0_linear_706_731)"/>
+                </mask>
+                <g mask="url(#mask0_706_731)">
+                <path d="M15.75 29.4751L5.25 34.7251V29.4751L10.5 26.8501L15.75 29.4751Z" fill="#E7ECFE"/>
+                </g>
+                <mask id="mask1_706_731" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="26" y="26" width="11" height="9">
+                <path d="M26.25 29.4751L36.75 34.7251V29.4751L31.5 26.8501L26.25 29.4751Z" fill="url(#paint1_linear_706_731)"/>
+                </mask>
+                <g mask="url(#mask1_706_731)">
+                <path d="M26.25 29.4751L36.75 34.7251V29.4751L31.5 26.8501L26.25 29.4751Z" fill="#E7ECFE"/>
+                </g>
+                <path d="M42 11.1167V32.1167L36.75 34.7417V20.3042L22.173 27.5886C21.4348 27.9577 20.5652 27.9577 19.827 27.5886L5.25 20.3042V34.7417L0 32.1167V11.1167L19.827 21.0261C20.5652 21.3952 21.4348 21.3952 22.173 21.0261L42 11.1167Z" fill="#E7ECFE"/>
+                </g>
+                <defs>
+                <linearGradient id="paint0_linear_706_731" x1="5.25" y1="34.7251" x2="10.5" y2="26.8501" gradientUnits="userSpaceOnUse">
+                <stop stop-color="white"/>
+                <stop offset="0.0666667" stop-color="white" stop-opacity="0.991353"/>
+                <stop offset="0.133333" stop-color="white" stop-opacity="0.96449"/>
+                <stop offset="0.2" stop-color="white" stop-opacity="0.91834"/>
+                <stop offset="0.266667" stop-color="white" stop-opacity="0.852589"/>
+                <stop offset="0.333333" stop-color="white" stop-opacity="0.768225"/>
+                <stop offset="0.4" stop-color="white" stop-opacity="0.668116"/>
+                <stop offset="0.466667" stop-color="white" stop-opacity="0.557309"/>
+                <stop offset="0.533333" stop-color="white" stop-opacity="0.442691"/>
+                <stop offset="0.6" stop-color="white" stop-opacity="0.331884"/>
+                <stop offset="0.666667" stop-color="white" stop-opacity="0.231775"/>
+                <stop offset="0.733333" stop-color="white" stop-opacity="0.147411"/>
+                <stop offset="0.8" stop-color="white" stop-opacity="0.0816599"/>
+                <stop offset="0.866667" stop-color="white" stop-opacity="0.03551"/>
+                <stop offset="0.933333" stop-color="white" stop-opacity="0.01"/>
+                <stop offset="1" stop-color="white" stop-opacity="0"/>
+                </linearGradient>
+                <linearGradient id="paint1_linear_706_731" x1="36.75" y1="34.7251" x2="31.5" y2="26.8501" gradientUnits="userSpaceOnUse">
+                <stop stop-color="white"/>
+                <stop offset="0.0666667" stop-color="white" stop-opacity="0.991353"/>
+                <stop offset="0.133333" stop-color="white" stop-opacity="0.96449"/>
+                <stop offset="0.2" stop-color="white" stop-opacity="0.91834"/>
+                <stop offset="0.266667" stop-color="white" stop-opacity="0.852589"/>
+                <stop offset="0.333333" stop-color="white" stop-opacity="0.768225"/>
+                <stop offset="0.4" stop-color="white" stop-opacity="0.668116"/>
+                <stop offset="0.466667" stop-color="white" stop-opacity="0.557309"/>
+                <stop offset="0.533333" stop-color="white" stop-opacity="0.442691"/>
+                <stop offset="0.6" stop-color="white" stop-opacity="0.331884"/>
+                <stop offset="0.666667" stop-color="white" stop-opacity="0.231775"/>
+                <stop offset="0.733333" stop-color="white" stop-opacity="0.147411"/>
+                <stop offset="0.8" stop-color="white" stop-opacity="0.0816599"/>
+                <stop offset="0.866667" stop-color="white" stop-opacity="0.03551"/>
+                <stop offset="0.933333" stop-color="white" stop-opacity="0.01"/>
+                <stop offset="1" stop-color="white" stop-opacity="0"/>
+                </linearGradient>
+                <clipPath id="clip0_706_731">
+                <rect width="42" height="42" fill="white" transform="translate(0 0.600098)"/>
+                </clipPath>
+                </defs>
+            </svg>
+        </a>
+        <nav class="header__nav nav">
+            <ul class="nav__wrapper">
+                <li class="nav__item"><a href="#platform" class="nav__link">Platform</a></li>
+                <li class="nav__item"><a href="#coin" class="nav__link">Midas Coin</a></li>
+                <li class="nav__item"><a href="#utility" class="nav__link">YAPs</a></li>
+                <li class="nav__item">
+                    <button class="nav__button nav__link" type="button" aria-label="Resources button">
+                        <span class="nav__button-name _arrow">Resources</span>
+                        <ul class="nav__submenu submenu">
+                            <li class="submenu__item"><a href="#support" class="submenu__item-link" title="Profile">Support</a></li>
+                            <li class="submenu__item"><a href="#buy-token" class="submenu__item-link" title="Settings">How to buy</a></li>
+                            <li class="submenu__item"><a href="#faq" class="submenu__item-link" title="Settings">FAQ</a></li>
+                        </ul>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+        <button class="header__profile profile" type="button" aria-label="Profile button" data-da=".nav__wrapper,425,first">
+            <span class="profile__name _arrow">Aurielien Solamon</span>
+            <ul class="profile__submenu submenu">
+                <li class="submenu__item"><a href="#" class="submenu__item-link" title="Profile">Profile</a></li>
+                <li class="submenu__item"><a href="#" class="submenu__item-link" title="Settings">Settings</a></li>
+                <li class="submenu__item"><a href="#" class="submenu__item-link" title="Log out">Log out</a></li>
+            </ul>
+        </button>
+        <button class="header__button-menu button-menu" type="button" aria-label="Menu button">
+            <span class="button-menu__item"></span>
+        </button>
+    </div>
+</header>
+        <main class="main">
+    <div class="container main__container">
+        <div class="main__title-wrapper">
+            <h1 class="main__title">
+                Unlock the full potential of Midas ecosystem <br>
+                <span class="main__title-accent">Buy <span class="main__title-mobile">midas</span> token</span>
+            </h1>
+        </div>
+        <ul class="main__info info">
+            <li class="info__item" data-aos="fade-up" data-aos-delay="0">
+                <div class="info__item-discount">30% APY</div>
+                <div class="info__graph">
+                    <div class="info__graph-wrapper" data-aos="custom-anim" data-aos-offset="250">
+                        <div class="info__graph-volume"></div> 
+                        <div class="info__graph-volume"></div>
+                        <div class="info__graph-volume"></div>
+                        <div class="info__graph-volume"></div>
+                        <div class="info__graph-volume"></div>
+                        <div class="info__graph-volume"></div>
+                        <div class="info__graph-volume"></div>
+                        <div class="info__graph-volume"></div>
+                        <div class="info__graph-volume"></div>
+                        <div class="info__graph-volume"></div>
+                    </div>
+                </div>
+                <div class="info__text">
+                    <div class="info__title">Stake MIDAS token and earn 30% APY</div>
+                    <div class="info__subtitle"><a href="#" class="info__more-link">Read more</a></div>
+                </div>
+            </li>
+            <li class="info__item" data-aos="fade-up" data-aos-delay="150">
+                <div class="info__graph">
+                    <div class="info__graph-switch">
+                        <div class="info__switch-item">
+                            <svg class="info__switch-img">
+                                <use href="img/icons/icons.svg#btc" xlink:href="img/icons/icons.svg#btc"></use>
+                            </svg>
+                        </div>
+                        <div class="info__switch-toggle" data-aos="custom-anim" data-aos-offset="250">
+                            <svg class="info__switch-gift">
+                                <use href="img/icons/icons.svg#gift" xlink:href="img/icons/icons.svg#gift"></use>
+                            </svg>
+                        </div>
+                        <div class="info__switch-item">
+                            <svg class="info__switch-img">
+                                <use href="img/icons/icons.svg#logo" xlink:href="img/icons/icons.svg#btc"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="info__text">
+                    <div class="info__title">Get increased APY by getting rewards in MIDAS</div>
+                    <div class="info__subtitle"><a href="#" class="info__more-link">How it work?</a></div>
+                </div>
+            </li>
+            <li class="info__item" data-aos="fade-up" data-aos-delay="300">
+                <div class="info__graph">
+                    <div class="info__graph-stat">
+                        <div class="info__stat-wrapper">
+                            <svg class="info__stat-logo">
+                                <use href="img/icons/icons.svg#logo" xlink:href="img/icons/icons.svg#logo"></use>
+                            </svg>
+                        </div>
+                        <svg class="info__stat-graph" data-aos="custom-anim" data-aos-offset="1100" viewBox="0 0 304 129" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 127.5L12.518 110.637C14.0085 108.248 17.4783 108.221 19.0051 110.588V110.588C20.653 113.141 24.4734 112.861 25.7304 110.094L36.0189 87.4445C37.4698 84.2505 42.0364 84.3383 43.3635 87.5857L45.4106 92.595C46.7265 95.8149 51.2429 95.9333 52.7307 92.7891V92.7891C54.1865 89.7126 58.5766 89.7408 59.9879 92.838L65.0737 103.999C66.4971 107.123 70.9357 107.121 72.3555 103.995L77.6519 92.3357C78.5883 90.2744 81.5224 90.2926 82.4332 92.3653V92.3653C83.5008 94.7951 87.0897 94.2777 87.4275 91.6453L92.9982 48.2338C93.3708 45.3301 96.634 43.7972 99.1068 45.3642L107.652 50.7796C107.883 50.9261 108.099 51.0961 108.296 51.2867L124.075 66.5877C124.357 66.8611 124.597 67.1745 124.787 67.5179L131.02 78.746C132.539 81.481 136.467 81.4933 138.003 78.7678L142.145 71.4141C143.807 68.4638 148.154 68.7843 149.366 71.9465L150.663 75.3321C151.971 78.7471 156.797 78.761 158.125 75.3536L162.427 64.3147C163.895 60.5454 169.392 61.0893 170.093 65.0735L171.797 74.7515C172.552 79.0379 178.642 79.206 179.632 74.9677L186.037 47.5449C186.882 43.9268 191.774 43.3153 193.483 46.6139L200.964 61.0455C202.358 63.7347 206.119 63.9589 207.823 61.4544L210.102 58.1028C212.015 55.2917 216.34 55.9964 217.26 59.2691L221.196 73.2581C222.312 77.2234 227.969 77.1171 228.935 73.1128L234.375 50.5642C235.317 46.6571 240.787 46.4246 242.058 50.2377L246.688 64.1316C247.659 67.0465 251.721 67.2082 252.921 64.3798L253.267 63.565C254.219 61.3208 257.344 61.173 258.503 63.3173V63.3173C259.65 65.4377 262.73 65.3232 263.716 63.1235L279.257 28.4551C280.494 25.6967 284.446 25.8041 285.531 28.6258V28.6258C286.654 31.5466 290.794 31.5262 291.888 28.5945L302 1.5" stroke="#43A1F7" stroke-width="3" class="info__graph-item"></path>
+                            <path d="M2 127.5L12.518 110.637C14.0085 108.248 17.4783 108.221 19.0051 110.588V110.588C20.653 113.141 24.4734 112.861 25.7304 110.094L36.0189 87.4445C37.4698 84.2505 42.0364 84.3383 43.3635 87.5857L45.4106 92.595C46.7265 95.8149 51.2429 95.9333 52.7307 92.7891V92.7891C54.1865 89.7126 58.5766 89.7408 59.9879 92.838L65.0737 103.999C66.4971 107.123 70.9357 107.121 72.3555 103.995L77.6519 92.3357C78.5883 90.2744 81.5224 90.2926 82.4332 92.3653V92.3653C83.5008 94.7951 87.0897 94.2777 87.4275 91.6453L92.9982 48.2338C93.3708 45.3301 96.634 43.7972 99.1068 45.3642L107.652 50.7796C107.883 50.9261 108.099 51.0961 108.296 51.2867L124.075 66.5877C124.357 66.8611 124.597 67.1745 124.787 67.5179L131.02 78.746C132.539 81.481 136.467 81.4933 138.003 78.7678L142.145 71.4141C143.807 68.4638 148.154 68.7843 149.366 71.9465L150.663 75.3321C151.971 78.7471 156.797 78.761 158.125 75.3536L162.427 64.3147C163.895 60.5454 169.392 61.0893 170.093 65.0735L171.797 74.7515C172.552 79.0379 178.642 79.206 179.632 74.9677L186.037 47.5449C186.882 43.9268 191.774 43.3153 193.483 46.6139L200.964 61.0455C202.358 63.7347 206.119 63.9589 207.823 61.4544L210.102 58.1028C212.015 55.2917 216.34 55.9964 217.26 59.2691L221.196 73.2581C222.312 77.2234 227.969 77.1171 228.935 73.1128L234.375 50.5642C235.317 46.6571 240.787 46.4246 242.058 50.2377L246.688 64.1316C247.659 67.0465 251.721 67.2082 252.921 64.3798L253.267 63.565C254.219 61.3208 257.344 61.173 258.503 63.3173V63.3173C259.65 65.4377 262.73 65.3232 263.716 63.1235L279.257 28.4551C280.494 25.6967 284.446 25.8041 285.531 28.6258V28.6258C286.654 31.5466 290.794 31.5262 291.888 28.5945L302 1.5" stroke="url(#paint0_linear_706_688)" stroke-width="3" class="info__graph-item"></path>
+                            <defs>
+                                <linearGradient id="paint0_linear_706_688" x1="302" y1="1.50006" x2="-7.56071" y2="32.7293" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#577CFF"></stop>
+                                    <stop offset="1" stop-color="#4CBFFF"></stop>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+                <div class="info__text">
+                    <div class="info__title">Buybacks & burns supporting MIDAS growth</div>
+                    <div class="info__subtitle"><a href="#" class="info__more-link">How it work?</a></div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</main>
+        <section class="metrics" id="platform">
+    <div class="container metrics__container">
+        <h2 class="metrics__title">Midas token metrics</h2>
+        <div class="metrics__price">
+            <div class="metrics__price-wrapper">
+                <div class="metrics__price-item">
+                    <div class="metrics__price-number">
+                        <span class="metrics__price-wallet">$</span>
+                        <span class="metrics__price-count" data-animation-number>47,572,397</span>
+                    </div>
+                    <div class="metrics__price-title">Market cap</div>
+                </div>
+            </div>
+            <div class="metrics__price-wrapper">
+                <div class="metrics__price-item">
+                    <div class="metrics__price-number">
+                        <span class="metrics__price-wallet">$</span>
+                        <span class="metrics__price-count" data-animation-number>183,241</span>
+                    </div>
+                    <div class="metrics__price-title">Volume (24 hours)</div>
+                </div>
+                <div class="metrics__price-item">
+                    <div class="metrics__price-number" data-animation-number>2,575,183.89</div>
+                    <div class="metrics__price-title">Circulation supply</div>
+                </div>
+            </div>
+            <div class="metrics__current">
+                <svg class="metrics__current-progress" data-aos="custom-anim" data-aos-anchor=".metrics__button" data-aos-anchor-placement="center" viewBox="0 0 724 724" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <mask id="mask0_1_553" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="724" height="724">
+                        <path stroke="url(#paint0_linear_1_553)" stroke-width="5" d="M2.5,362A359.5,359.5 0,1,1 721.5,362A359.5,359.5 0,1,1 2.5,362" class="metrics__current-item"></path>
+                    </mask>
+                    <g mask="url(#mask0_1_553)">
+                        <path stroke="url(#paint1_radial_1_553)" stroke-width="5" d="M2.5,362A359.5,359.5 0,1,1 721.5,362A359.5,359.5 0,1,1 2.5,362" class="metrics__current-item"></path>
+                    </g>
+                    <defs>
+                        <linearGradient id="paint0_linear_1_553" x1="362" y1="724" x2="362" y2="1.96732e-06" gradientUnits="userSpaceOnUse">
+                            <stop offset="0.347024" stop-color="white" stop-opacity="0"></stop>
+                            <stop offset="1" stop-color="white"></stop>
+                        </linearGradient>
+                        <radialGradient id="paint1_radial_1_553" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(673.075 0.0232352) rotate(133.365) scale(995.882 285240)">
+                            <stop stop-color="#43D7F7"></stop>
+                            <stop offset="1" stop-color="#00F79E"></stop>
+                        </radialGradient>
+                    </defs>
+                </svg>
+                <div class="metrics__current-number">
+                    <div class="metrics__current-wallet">$</div>
+                    <div class="metrics__current-count" data-animation-number>19.24</div>    
+                </div>
+                <div class="metrics__current-title">Current price</div>
+            </div>
+        </div>
+        <div class="metrics__button-wrapper">
+            <a href="##" class="metrics__button" data-aos="fade-down" data-aos-offset="100">
+                <picture><source srcset="img/fox.webp" type="image/webp"><img class="metrics__button-img" src="img/fox.png" alt="Metamask icon"></picture>
+                <span class="metrics__button-title">Add to Metamask -></span>
+            </a>
+            <a href="##" class="metrics__button" data-aos="fade-down" data-aos-offset="100">
+                <svg class="metrics__button-img">
+                    <use href="img/icons/icons.svg#chain" xlink:href="img/icons/icons.svg#chain"></use>
+                </svg>
+                <span class="metrics__button-title">Smart contract -></span>
+            </a>
+        </div>
+    </div>
+</section>
+        <section class="token" id="coin">
+    <div class="token__container container">
+        <div class="token__text">
+            <h2 class="token__title">
+                Stake Midas token and
+                <span class="token__earn">Earn 30% APY</span>
+            </h2>
+            <div class="token__description">
+                <span class="token__description-accent">MIDAS</span> token is based on Fantom network with total supply of <span class="token__description-accent">5,000,000</span> tokens generating rewards for&nbsp;its&nbsp;holders.
+            </div>
+        </div>
+        <div class="token__statistics statistics">
+            <div class="statistics__title">OVER</div>
+            <ul class="statistics__item-wrapper">
+                <li class="statistics__item" data-aos="fade-left" data-aos-offset="100">
+                    <div class="statistics__item-img statistics__item-img--wallet">
+                        <img src="img/wallet.svg" alt="Wallet icon" class="statistics__item-icon">
+                    </div>
+                    <div class="statistics__item-text">
+                        <h3 class="statistics__item-title">$30 million</h3>
+                        <div class="statistics__item-subtitle">Are staking MIDAS tokens</div>
+                    </div>
+                </li>
+                <li class="statistics__item" data-aos="fade-left" data-aos-offset="100">
+                    <div class="statistics__item-img statistics__item-img--users">
+                        <img src="img/users.svg" alt="Quantity of Users" class="statistics__item-icon">
+                    </div>
+                    <div class="statistics__item-text">
+                        <h3 class="statistics__item-title">2,600 users</h3>
+                        <div class="statistics__item-subtitle">Are staking MIDAS tokens</div>
+                    </div>
+                </li>
+                <li class="statistics__item" data-aos="fade-left" data-aos-offset="100">
+                    <div class="statistics__item-img statistics__item-img--layers">
+                        <img src="img/layers.svg" alt="Total stucked Midas" class="statistics__item-icon">
+                    </div>
+                    <div class="statistics__item-text">
+                        <h3 class="statistics__item-title">1,800,000</h3>
+                        <div class="statistics__item-subtitle">Total staked MIDAS</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+        <section class="token-utility" id="utility">
+    <div class="token-utility__container container">
+        <h2 class="token-utility__title">Midas token utility</h2>
+        <ul class="token-utility__item-wrapper">
+            <li class="token-utility__item">
+                <div class="token-utility__item-text" id="token-utility__split" data-aos="fade-right" data-aos-offset="100">
+                    <h3 class="token-utility__item-title">Payout Split</h3>
+                    <span class="token-utility__item-subtitle">10% of rewards earned by Midas platform community is used to <span class="token-utility__item-accent">buyback MIDAS token</span> from the open&nbsp;market</span>
+                </div>
+                <div class="token-utility__item-graph token-utility__item-graph--split">
+                    <svg class="token-utility__item-svg" data-aos="custom-anim" data-aos-anchor="#token-utility__split" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 580 448" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+                        <defs>
+                            <linearGradient id="jul__bg-fill" x1="45" y1="260" x2="127.611" y2="230.376" spreadMethod="pad" gradientUnits="userSpaceOnUse" gradientTransform="translate(0 0)">
+                                <stop id="jul__bg-fill-0" offset="0%" stop-color="#ffc657"/>
+                                <stop id="jul__bg-fill-1" offset="100%" stop-color="#ffd977"/>
+                            </linearGradient>
+                        </defs>
+                        <g transform="translate(0-1.137149)">
+                            <g id="feb__bg_to" transform="translate(71.57055,366.971147)">
+                                <rect id="feb__bg" width="89" height="50.193798" rx="24" ry="24" transform="scale(1,0.996139) translate(-44.57055,-25.096897)" fill="#fff" fill-opacity="0.08"/>
+                            </g>
+                            <g id="feb__outline_to" transform="translate(71.57055,599.471149)">
+                                <rect id="feb__outline" width="87" height="48.280704" rx="23" ry="23" transform="scale(1,0.994186) translate(-43.5,-258)" fill="none" stroke="#fff" stroke-width="2" stroke-opacity="0.08"/>
+                            </g>
+                        </g>
+                        <g>
+                            <g id="mar__bg_to" transform="translate(180.5,582)">
+                                <rect id="mar__bg" width="89" height="50" rx="24" ry="24" transform="translate(-44.5,-260)" fill="#fff" fill-opacity="0.08"/>
+                            </g>
+                            <g id="mar__outline_to" transform="translate(180.5,452)">
+                                <rect id="mar__outline" width="87" height="48" rx="23" ry="23" transform="translate(-43.5,-129)" fill="none" stroke="#fff" stroke-width="2" stroke-opacity="0.08"/>
+                            </g>
+                        </g>
+                        <g>
+                            <g id="apr__bg_to" transform="translate(289.1025,561)">
+                                <rect id="apr__bg" width="89" height="50" rx="24" ry="24" transform="translate(-44.1025,-260)" fill="#fff" fill-opacity="0.08"/>
+                            </g>
+                            <g id="apr__outline_to" transform="translate(289.5,431)">
+                                <rect id="apr__outline" width="87" height="48" rx="23" ry="23" transform="translate(-43.5,-129)" fill="none" stroke="#fff" stroke-width="2" stroke-opacity="0.08"/>
+                            </g>
+                        </g>
+                        <g>
+                            <g id="jun__bg_to" transform="translate(398.028,541)">
+                                <rect id="jun__bg" width="89" height="50" rx="24" ry="24" transform="translate(-44.028,-259)" fill="#fff" fill-opacity="0.08"/>
+                            </g>
+                            <g id="jun__outline_to" transform="translate(398.5,412)">
+                                <rect id="jun__outline" width="87" height="48" rx="23" ry="23" transform="translate(-43.5,-129)" fill="none" stroke="#fff" stroke-width="2" stroke-opacity="0.08"/>
+                            </g>
+                        </g>
+                        <g>
+                            <g id="jul__bg_to" transform="translate(507.5265,522.199)">
+                                <rect id="jul__bg" width="89" height="50" rx="24" ry="24" transform="translate(-44.5,-260)" fill="url(#jul__bg-fill)"/>
+                            </g>
+                        </g>
+                        <path d="M55.4347,373v-14.545h9.3181v2.208h-6.6832v3.949h6.044v2.209h-6.044v6.179h-2.6349Zm15.2338.213c-1.0937,0-2.0383-.227-2.8338-.682-.7907-.459-1.3991-1.108-1.8253-1.946-.4261-.843-.6392-1.835-.6392-2.976c0-1.122.2131-2.107.6392-2.954.4309-.852,1.0322-1.515,1.804-1.989.7718-.478,1.6785-.717,2.7202-.717.6723,0,1.3068.109,1.9034.327.6013.213,1.1316.544,1.5909.994.464.45.8286,1.023,1.0938,1.719.2651.691.3977,1.515.3977,2.471v.789h-8.9418v-1.733h6.4773c-.0047-.493-.1113-.931-.3196-1.314-.2083-.389-.4995-.694-.8736-.916-.3693-.223-.8002-.334-1.2926-.334-.5256,0-.9872.128-1.3849.383-.3978.251-.7079.583-.9304.995-.2178.407-.3291.854-.3338,1.342v1.513c0,.634.116,1.179.348,1.633.232.45.5563.796.973,1.037.4166.237.9043.355,1.463.355.3741,0,.7126-.052,1.0157-.156.303-.109.5658-.268.7883-.476.2226-.208.3907-.466.5043-.774l2.4006.27c-.1516.634-.4404,1.188-.8665,1.662-.4214.469-.9612.833-1.6193,1.094-.6582.255-1.411.383-2.2586.383ZM77.4081,373v-14.545h2.571v5.44h.1066c.1325-.265.3196-.547.561-.845.2415-.303.5682-.561.9801-.774.412-.218.9375-.327,1.5768-.327.8428,0,1.6027.215,2.2798.646.6818.426,1.2216,1.058,1.6193,1.896.4025.834.6037,1.857.6037,3.069c0,1.198-.1965,2.216-.5895,3.054s-.928,1.477-1.6051,1.917c-.6771.441-1.4441.661-2.3011.661-.625,0-1.1435-.104-1.5554-.313-.412-.208-.7434-.459-.9944-.753-.2462-.298-.4379-.58-.5752-.845h-.1492v1.719h-2.5284Zm2.5213-5.455c0,.706.0994,1.324.2983,1.854.2036.53.4948.945.8736,1.243.3835.294.8475.44,1.392.44.5682,0,1.0441-.151,1.4276-.454.3835-.308.6723-.727.8665-1.257.1988-.535.2983-1.144.2983-1.826c0-.677-.0971-1.278-.2912-1.804-.1942-.525-.483-.937-.8665-1.235-.3835-.299-.8618-.448-1.4347-.448-.5492,0-1.0156.145-1.3991.433-.3835.289-.6747.694-.8736,1.215-.1941.521-.2912,1.134-.2912,1.839Z" fill="#fff"/>
+                        <path d="M163.435,338.455h3.224l4.318,10.539h.171l4.318-10.539h3.224v14.545h-2.528v-9.993h-.135l-4.02,9.95h-1.889l-4.02-9.971h-.135v10.014h-2.528v-14.545Zm20.75,14.765c-.691,0-1.314-.123-1.868-.369-.549-.251-.985-.62-1.306-1.108-.318-.488-.476-1.089-.476-1.804c0-.616.113-1.125.341-1.527.227-.403.537-.724.93-.966.393-.241.836-.424,1.328-.547.497-.128,1.011-.22,1.541-.277.639-.066,1.158-.125,1.556-.177.397-.057.686-.142.866-.256.185-.118.277-.301.277-.547v-.043c0-.535-.158-.949-.476-1.242-.317-.294-.774-.441-1.37-.441-.63,0-1.13.138-1.499.412-.365.275-.611.599-.739.973l-2.4-.341c.189-.663.502-1.217.937-1.662.436-.45.969-.786,1.598-1.008.63-.228,1.326-.341,2.088-.341.526,0,1.049.061,1.57.185.521.123.997.326,1.428.61.43.28.776.661,1.036,1.144.266.483.398,1.086.398,1.811v7.301h-2.471v-1.499h-.086c-.156.303-.376.588-.66.853-.28.26-.632.471-1.058.632-.422.156-.917.234-1.485.234Zm.668-1.889c.516,0,.963-.102,1.342-.305.379-.209.67-.483.874-.824.208-.341.312-.713.312-1.115v-1.286c-.08.066-.218.128-.412.185-.189.057-.402.106-.639.149s-.471.08-.703.114c-.232.033-.433.061-.604.085-.383.052-.727.137-1.03.255-.303.119-.542.285-.717.498-.175.208-.263.478-.263.809c0,.474.173.831.519,1.073.345.241.786.362,1.321.362ZM192.13,353v-10.909h2.493v1.818h.114c.199-.63.54-1.115,1.023-1.456.487-.346,1.044-.518,1.669-.518.142,0,.3.007.476.021.179.009.329.026.447.05v2.365c-.109-.038-.282-.071-.518-.1-.232-.033-.457-.049-.675-.049-.469,0-.89.101-1.264.305-.37.199-.661.476-.874.831s-.32.765-.32,1.229v6.413h-2.571Z" fill="#fff"/>
+                        <path d="M275.303,333h-2.813l5.121-14.545h3.253L285.991,333h-2.812l-3.885-11.562h-.114L275.303,333Zm.092-5.703h7.67v2.116h-7.67v-2.116Zm11.999,9.794v-15h2.528v1.804h.149c.133-.265.32-.547.561-.845.242-.303.568-.561.98-.774.412-.218.938-.327,1.577-.327.843,0,1.603.215,2.28.646.682.426,1.222,1.058,1.619,1.896.403.834.604,1.857.604,3.069c0,1.198-.197,2.216-.59,3.054s-.928,1.477-1.605,1.917c-.677.441-1.444.661-2.301.661-.625,0-1.143-.104-1.555-.313-.412-.208-.744-.459-.994-.753-.247-.298-.438-.58-.576-.845h-.106v5.81h-2.571Zm2.521-9.546c0,.706.099,1.324.298,1.854.204.53.495.945.874,1.243.383.294.847.44,1.392.44.568,0,1.044-.151,1.427-.454.384-.308.673-.727.867-1.257.199-.535.298-1.144.298-1.826c0-.677-.097-1.278-.291-1.804-.194-.525-.483-.937-.866-1.235-.384-.299-.862-.448-1.435-.448-.549,0-1.016.145-1.399.433-.384.289-.675.694-.874,1.215-.194.521-.291,1.134-.291,1.839ZM299.494,333v-10.909h2.493v1.818h.113c.199-.63.54-1.115,1.023-1.456.488-.346,1.044-.518,1.669-.518.142,0,.301.007.476.021.18.009.329.026.447.05v2.365c-.109-.038-.281-.071-.518-.1-.232-.033-.457-.049-.675-.049-.469,0-.89.101-1.264.305-.369.199-.661.476-.874.831s-.319.765-.319,1.229v6.413h-2.571Z" fill="#fff"/>
+                        <path d="M388.173,298.455h2.614v10.227c-.005.937-.204,1.745-.597,2.422-.393.672-.942,1.191-1.647,1.555-.701.36-1.518.54-2.451.54-.852,0-1.619-.152-2.301-.455-.677-.307-1.214-.762-1.612-1.363-.398-.602-.597-1.35-.597-2.245h2.621c.005.393.09.732.256,1.016.17.284.405.502.703.653.298.152.642.228,1.03.228.421,0,.779-.088,1.072-.263.294-.18.516-.445.668-.796.156-.35.237-.781.241-1.292v-10.227Zm11.912,9.957v-6.321h2.571v10.909h-2.493v-1.939h-.113c-.247.611-.651,1.11-1.215,1.499-.559.388-1.248.582-2.067.582-.715,0-1.347-.159-1.896-.476-.544-.322-.971-.788-1.278-1.399-.308-.615-.462-1.359-.462-2.23v-6.946h2.571v6.548c0,.691.189,1.241.568,1.648s.876.611,1.492.611c.378,0,.745-.093,1.1-.277.356-.185.647-.46.874-.824.232-.369.348-.831.348-1.385Zm7.386-1.804v6.392h-2.571v-10.909h2.457v1.854h.128c.251-.611.651-1.097,1.2-1.456.554-.36,1.239-.54,2.053-.54.753,0,1.409.161,1.967.483.564.322.999.788,1.307,1.399.313.611.467,1.352.462,2.223v6.946h-2.571v-6.548c0-.729-.19-1.3-.568-1.712-.374-.412-.893-.618-1.556-.618-.45,0-.85.1-1.2.298-.346.195-.618.476-.817.846-.194.369-.291.816-.291,1.342Z" fill="#fff"/>
+                        <path d="M501.173,278.455h2.614v10.227c-.005.937-.204,1.745-.597,2.422-.393.672-.942,1.191-1.647,1.555-.701.36-1.518.54-2.451.54-.852,0-1.619-.152-2.301-.455-.677-.307-1.214-.762-1.612-1.363-.398-.602-.597-1.35-.597-2.245h2.621c.005.393.09.732.256,1.016.17.284.405.502.703.653.298.152.642.228,1.03.228.421,0,.779-.088,1.072-.263.294-.18.516-.445.668-.796.156-.35.237-.781.241-1.292v-10.227Zm11.912,9.957v-6.321h2.571v10.909h-2.493v-1.939h-.113c-.247.611-.651,1.11-1.215,1.499-.559.388-1.248.582-2.067.582-.715,0-1.347-.159-1.896-.476-.544-.322-.971-.788-1.278-1.399-.308-.615-.462-1.359-.462-2.23v-6.946h2.571v6.548c0,.691.189,1.241.568,1.648s.876.611,1.492.611c.378,0,.745-.093,1.1-.277.356-.185.647-.46.874-.824.232-.369.348-.831.348-1.385Zm7.386-9.957v14.545h-2.571v-14.545h2.571Z" fill="#fff"/>
+                    </svg>            
+               </div>
+            </li>
+            <li class="token-utility__item">
+                <div class="token-utility__item-text" id="token-utility__farming" data-aos="fade-left" data-aos-offset="100">
+                    <h3 class="token-utility__item-title">Farming</h3>
+                    <span class="token-utility__item-subtitle">Midas team will regularly launch farming activities on third party decentralized exchanges for community <span class="token-utility__item-accent">to earn high APR rewards for staking</span> of MIDAS token in liquidity pools</span>
+                </div>
+                <div class="token-utility__item-graph token-utility__item-graph--dots">
+                    <svg class="token-utility__item-svg" data-aos="custom-anim" data-aos-anchor="#token-utility__farming" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 464 304" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+                        <defs>
+                            <linearGradient id="dots-yellow-fill" x1="0.0899" y1="8" x2="8.0813" y2="-0.37154" spreadMethod="pad" gradientUnits="userSpaceOnUse" gradientTransform="translate(0 0)">
+                                <stop id="dots-yellow-fill-0" offset="0%" stop-color="#ffc657"/>
+                                <stop id="dots-yellow-fill-1" offset="100%" stop-color="#ffd977"/>
+                            </linearGradient>
+                        </defs>
+                        <g id="dots-first" opacity="0">
+                            <circle r="8" transform="translate(40 8)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(296 8)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(328 8)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(8 40)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(104 40)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(200 40)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(328 40)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(360 40)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(392 40)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(456 40)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(232 72)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(296 72)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(328 72)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(392 72)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(456 72)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(104 104)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(168 104)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(200 104)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(296 104)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(424 104)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(8 136)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(40 136)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(264 136)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(392 136)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(456 136)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(136 168)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(168 168)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(296 168)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(328 168)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(392 168)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(8 200)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(40 200)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(104 200)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(136 200)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(168 200)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(264 200)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(328 200)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(456 200)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(40 232)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(72 232)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(104 232)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(136 232)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(232 232)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(296 232)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(360 232)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(456 232)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(72 264)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(264 264)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(328 264)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(360 264)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(424 264)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(456 264)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(104 296)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(136 296)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(232 296)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(424 296)" fill="#fff" fill-opacity="0.08"/>
+                        </g>
+                        <g id="dots-second" opacity="0">
+                            <circle r="8" transform="translate(264 8)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(232 40)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(200 72)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(328 136)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(360 136)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(360 168)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(168 296)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(200 296)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(72 200)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(40 168)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(8 168)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(168 136)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(200 168)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(136 136)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(72 40)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(232 8)" fill="#fff" fill-opacity="0.08"/>
+                        </g>
+                        <g id="dots-third" opacity="0">
+                            <circle r="8" transform="translate(8 8)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(360 8)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(40 40)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(136 40)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(296 40)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(264 72)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(168 72)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(104 72)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(72 72)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(136 104)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(360 72)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(424 72)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(392 104)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(328 104)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(264 104)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(232 104)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(424 136)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(296 136)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(200 136)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(232 168)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(264 168)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(104 136)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(72 136)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(104 168)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(200 200)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(296 200)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(360 200)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(392 200)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(424 232)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(392 264)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(328 232)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(200 232)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(200 264)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(232 264)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(264 232)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(168 232)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(136 264)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(8 296)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(72 296)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(104 264)" fill="#fff" fill-opacity="0.08"/>
+                            <circle r="8" transform="translate(104 8)" fill="#fff" fill-opacity="0.08"/>
+                        </g>
+                        <circle r="8" transform="translate(72 8)" fill="url(#dots-yellow-fill)"/>
+                        <circle r="8" transform="translate(264 40)" fill="url(#dots-yellow-fill)"/>
+                        <circle r="8" transform="translate(136 72)" fill="url(#dots-yellow-fill)"/>
+                        <circle r="8" transform="translate(360 104)" fill="url(#dots-yellow-fill)"/>
+                        <circle r="8" transform="translate(232 136)" fill="url(#dots-yellow-fill)"/>
+                        <circle r="8" transform="translate(72 168)" fill="url(#dots-yellow-fill)"/>
+                        <circle r="8" transform="translate(232 200)" fill="url(#dots-yellow-fill)"/>
+                        <circle r="8" transform="translate(392 232)" fill="url(#dots-yellow-fill)"/>
+                        <circle r="8" transform="translate(168 264)" fill="url(#dots-yellow-fill)"/>
+                        <circle r="8" transform="translate(40 296)" fill="url(#dots-yellow-fill)"/>
+                    </svg>
+                </div>
+            </li>
+            <li class="token-utility__item">
+                <div class="token-utility__item-text" id="token-utility__boost" data-aos="fade-right" data-aos-offset="100">
+                    <h3 class="token-utility__item-title">APY Boost</h3>
+                    <span class="token-utility__item-subtitle">10% of rewards earned by Midas platform community is used <span class="token-utility__item-accent">to&nbsp;buyback MIDAS token</span> from the open&nbsp;market</span>
+                </div>
+                <div class="token-utility__item-graph token-utility__item-graph--thunder">
+                    <svg class="token-utility__item-svg" data-aos="custom-anim" data-aos-anchor="#token-utility__boost" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 580 432" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+                        <defs>
+                            <linearGradient id="eboaQZ7V1yU2-fill" x1="281.589" y1="281.357" x2="345.967" y2="227.272" spreadMethod="pad" gradientUnits="userSpaceOnUse" gradientTransform="translate(0 0)">
+                                <stop id="eboaQZ7V1yU2-fill-0" offset="0%" stop-color="#ffc657"/>
+                                <stop id="eboaQZ7V1yU2-fill-1" offset="100%" stop-color="#ffd977"/>
+                            </linearGradient>
+                            <linearGradient id="eboaQZ7V1yU4-stroke" x1="32" y1="0" x2="-32" y2="0" spreadMethod="pad" gradientUnits="userSpaceOnUse" gradientTransform="translate(0 0)">
+                                <stop id="eboaQZ7V1yU4-stroke-0" offset="0%" stop-color="#fff"/>
+                                <stop id="eboaQZ7V1yU4-stroke-1" offset="62.1142%" stop-color="rgba(255,255,255,0)"/>
+                            </linearGradient>
+                            <linearGradient id="eboaQZ7V1yU5-stroke" x1="32" y1="0" x2="-32" y2="0" spreadMethod="pad" gradientUnits="userSpaceOnUse" gradientTransform="translate(0 0)">
+                                <stop id="eboaQZ7V1yU5-stroke-0" offset="0%" stop-color="#fff"/>
+                                <stop id="eboaQZ7V1yU5-stroke-1" offset="62.1142%" stop-color="rgba(255,255,255,0)"/>
+                            </linearGradient>
+                            <linearGradient id="eboaQZ7V1yU6-stroke" x1="32" y1="0" x2="-32" y2="0" spreadMethod="pad" gradientUnits="userSpaceOnUse" gradientTransform="translate(0 0)">
+                                <stop id="eboaQZ7V1yU6-stroke-0" offset="0%" stop-color="#fff"/>
+                                <stop id="eboaQZ7V1yU6-stroke-1" offset="62.1142%" stop-color="rgba(255,255,255,0)"/>
+                            </linearGradient>
+                            <linearGradient id="eboaQZ7V1yU7-stroke" x1="32" y1="0" x2="-32" y2="0" spreadMethod="pad" gradientUnits="userSpaceOnUse" gradientTransform="translate(0 0)">
+                                <stop id="eboaQZ7V1yU7-stroke-0" offset="0%" stop-color="#fff"/>
+                                <stop id="eboaQZ7V1yU7-stroke-1" offset="62.1142%" stop-color="rgba(255,255,255,0)"/>
+                            </linearGradient>
+                            <linearGradient id="eboaQZ7V1yU9-stroke" x1="52" y1="0" x2="-52" y2="0" spreadMethod="pad" gradientUnits="userSpaceOnUse" gradientTransform="translate(0 0)">
+                                <stop id="eboaQZ7V1yU9-stroke-0" offset="0%" stop-color="#fff"/>
+                                <stop id="eboaQZ7V1yU9-stroke-1" offset="63.5367%" stop-color="rgba(255,255,255,0)"/>
+                            </linearGradient>
+                            <linearGradient id="eboaQZ7V1yU10-stroke" x1="52" y1="0" x2="-52" y2="0" spreadMethod="pad" gradientUnits="userSpaceOnUse" gradientTransform="translate(0 0)">
+                                <stop id="eboaQZ7V1yU10-stroke-0" offset="0%" stop-color="#fff"/>
+                                <stop id="eboaQZ7V1yU10-stroke-1" offset="63.5367%" stop-color="rgba(255,255,255,0)"/>
+                            </linearGradient>
+                            <linearGradient id="eboaQZ7V1yU11-stroke" x1="52" y1="0" x2="-52" y2="0" spreadMethod="pad" gradientUnits="userSpaceOnUse" gradientTransform="translate(0 0)">
+                                <stop id="eboaQZ7V1yU11-stroke-0" offset="0%" stop-color="#fff"/>
+                                <stop id="eboaQZ7V1yU11-stroke-1" offset="63.5367%" stop-color="rgba(255,255,255,0)"/>
+                            </linearGradient>
+                            <linearGradient id="eboaQZ7V1yU12-stroke" x1="52" y1="0" x2="-52" y2="0" spreadMethod="pad" gradientUnits="userSpaceOnUse" gradientTransform="translate(0 0)">
+                                <stop id="eboaQZ7V1yU12-stroke-0" offset="0%" stop-color="#fff"/>
+                                <stop id="eboaQZ7V1yU12-stroke-1" offset="63.5367%" stop-color="rgba(255,255,255,0)"/>
+                            </linearGradient>
+                            <linearGradient id="eboaQZ7V1yU14-stroke" x1="73" y1="0" x2="-73" y2="0" spreadMethod="pad" gradientUnits="userSpaceOnUse" gradientTransform="translate(0 0)">
+                                <stop id="eboaQZ7V1yU14-stroke-0" offset="0%" stop-color="#fff"/>
+                                <stop id="eboaQZ7V1yU14-stroke-1" offset="58.9761%" stop-color="rgba(255,255,255,0)"/>
+                            </linearGradient>
+                            <linearGradient id="eboaQZ7V1yU15-stroke" x1="73" y1="0" x2="-73" y2="0" spreadMethod="pad" gradientUnits="userSpaceOnUse" gradientTransform="translate(0 0)">
+                                <stop id="eboaQZ7V1yU15-stroke-0" offset="0%" stop-color="#fff"/>
+                                <stop id="eboaQZ7V1yU15-stroke-1" offset="58.9761%" stop-color="rgba(255,255,255,0)"/>
+                            </linearGradient>
+                            <linearGradient id="eboaQZ7V1yU16-stroke" x1="73" y1="0" x2="-73" y2="0" spreadMethod="pad" gradientUnits="userSpaceOnUse" gradientTransform="translate(0 0)">
+                                <stop id="eboaQZ7V1yU16-stroke-0" offset="0%" stop-color="#fff"/>
+                                <stop id="eboaQZ7V1yU16-stroke-1" offset="58.9761%" stop-color="rgba(255,255,255,0)"/>
+                            </linearGradient>
+                            <linearGradient id="eboaQZ7V1yU17-stroke" x1="73" y1="0" x2="-73" y2="0" spreadMethod="pad" gradientUnits="userSpaceOnUse" gradientTransform="translate(0 0)">
+                                <stop id="eboaQZ7V1yU17-stroke-0" offset="0%" stop-color="#fff"/>
+                                <stop id="eboaQZ7V1yU17-stroke-1" offset="58.9761%" stop-color="rgba(255,255,255,0)"/>
+                            </linearGradient>
+                        </defs>
+                        <g id="thunder-main" transform="translate(281,216) scale(0.57,0.57)">
+                            <path d="M288.901,150.902c-2.46-.863-4.886.497-7.614,3.103-2.762,2.638-6.122,6.838-10.533,12.352v0l-.043.054-33.033,41.291-.045.056v0c-3.347,4.184-5.913,7.391-7.429,9.979-1.517,2.591-2.125,4.798-1.137,6.854.988,2.055,3.091,2.959,6.062,3.393c2.968.433,7.075.433,12.433.433v0h.072h9.7c2.849,0,4.911.001,6.483.213c1.551.208,2.513.608,3.229,1.324s1.116,1.678,1.325,3.229c.211,1.572.213,3.634.213,6.484v17.957.07v0c0,7.061,0,12.439.508,16.225.502,3.739,1.547,6.316,4.007,7.179c2.461.863,4.886-.497,7.614-3.103c2.762-2.638,6.122-6.838,10.533-12.351l.044-.055l33.032-41.291.045-.056v0c3.348-4.184,5.913-7.391,7.429-9.979c1.518-2.591,2.125-4.798,1.138-6.854-.988-2.055-3.091-2.959-6.063-3.393-2.967-.433-7.075-.433-12.433-.433v0h-.072-9.699c-2.85,0-4.912-.001-6.484-.213-1.551-.208-2.512-.608-3.228-1.324-.717-.716-1.117-1.678-1.325-3.229-.212-1.572-.213-3.634-.213-6.484v-17.957-.07c0-7.06,0-12.439-.509-16.225-.502-3.739-1.546-6.316-4.007-7.179Z" transform="translate(-281.000252,-215.999992)" clip-rule="evenodd" fill="url(#eboaQZ7V1yU2-fill)" fill-rule="evenodd"/>
+                        </g>
+                        <g>
+                            <circle r="31" transform="translate(95 216)" fill="none" stroke="url(#eboaQZ7V1yU4-stroke)" stroke-width="2" stroke-opacity="0.08"/>
+                            <circle r="31" transform="matrix(-1 0 0-1 467 216)" fill="none" stroke="url(#eboaQZ7V1yU5-stroke)" stroke-width="2" stroke-opacity="0.08"/>
+                            <circle r="31" transform="matrix(0 1-1 0 281 33)" fill="none" stroke="url(#eboaQZ7V1yU6-stroke)" stroke-width="2" stroke-opacity="0.08"/>
+                            <circle r="31" transform="matrix(0-1 1 0 281 399)" fill="none" stroke="url(#eboaQZ7V1yU7-stroke)" stroke-width="2" stroke-opacity="0.08"/>
+                        </g>
+                        <g id="thunder-second" opacity="0">
+                            <circle r="50" transform="translate(95 216)" fill="none" stroke="url(#eboaQZ7V1yU9-stroke)" stroke-width="4" stroke-opacity="0.12"/>
+                            <circle r="50" transform="matrix(-1 0 0-1 467 216)" fill="none" stroke="url(#eboaQZ7V1yU10-stroke)" stroke-width="4" stroke-opacity="0.12"/>
+                            <circle r="50" transform="matrix(0 1-1 0 281 33)" fill="none" stroke="url(#eboaQZ7V1yU11-stroke)" stroke-width="4" stroke-opacity="0.12"/>
+                            <circle r="50" transform="matrix(0-1 1 0 281 399)" fill="none" stroke="url(#eboaQZ7V1yU12-stroke)" stroke-width="4" stroke-opacity="0.12"/>
+                        </g>
+                        <g id="thunder-third" opacity="0">
+                            <circle r="70" transform="translate(95 216)" fill="none" stroke="url(#eboaQZ7V1yU14-stroke)" stroke-width="6" stroke-opacity="0.16"/>
+                            <circle r="70" transform="matrix(-1 0 0-1 467 216)" fill="none" stroke="url(#eboaQZ7V1yU15-stroke)" stroke-width="6" stroke-opacity="0.16"/>
+                            <circle r="70" transform="matrix(0 1-1 0 281 33)" fill="none" stroke="url(#eboaQZ7V1yU16-stroke)" stroke-width="6" stroke-opacity="0.16"/>
+                            <circle r="70" transform="matrix(0-1 1 0 281 399)" fill="none" stroke="url(#eboaQZ7V1yU17-stroke)" stroke-width="6" stroke-opacity="0.16"/>
+                        </g>
+                    </svg>
+                </div>
+            </li>
+        </ul>
+        <a href="##" class="token-utility__button button">Learn more -></a>
+    </div>
+</section>
+        <section class="support" id="support">
+    <div class="support__container container">
+        <h2 class="support__title">How we support <br>Midas token</h2>
+        <div class="support__sphere-wrapper">
+            <div class="support__sphere support__sphere--purple">
+                <div class="support__sphere-text" data-aos="fade-up">
+                    <span class="support__sphere-number">$4,824,884</span>
+                    <span class="support__sphere-subtitle">Liquidity on DEX</span>
+                </div>
+                <svg class="support__sphere-cycle" data-aos="custom-anim" data-aos-anchor=".support__sphere-text" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <mask id="purple-circle_mask" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="512" height="512">
+                        <circle r="254.5" transform="matrix(-1 0 0 1 256 256)" stroke="url(#purple-circle_transparent)" stroke-width="3"/>
+                    </mask>
+                    <g mask="url(#purple-circle_mask)">
+                        <circle id="purple-circle" r="254.5" transform="matrix(-1 0 0 1 256 256)" stroke="url(#purple-circle_color)" stroke-width="3"/>
+                    </g>
+                    <defs>
+                        <linearGradient id="purple-circle_transparent" x1="512" y1="256" x2="-1.40608e-06" y2="256" gradientUnits="userSpaceOnUse">
+                            <stop offset="0.85" stop-color="white" stop-opacity="0"/>
+                            <stop offset="1" stop-color="white"/>
+                        </linearGradient>
+                        <radialGradient id="purple-circle_color" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(114 118) rotate(70.1805) scale(418.808)">
+                            <stop stop-color="#B153FB"/>
+                            <stop offset="1" stop-color="#6944FF"/>
+                        </radialGradient>
+                    </defs>
+                </svg> 
+            </div>
+            <div class="support__sphere support__sphere--blue">
+                <div class="support__sphere-text" data-aos="fade-up" data-aos-anchor=".support__sphere-text">
+                    <span class="support__sphere-number">63,844</span>
+                    <span class="support__sphere-subtitle">Bought back MIDAS tokens</span>
+                </div>
+                <svg class="support__sphere-cycle" data-aos="custom-anim" data-aos-anchor=".support__sphere-text" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <mask id="blue-circle_mask" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="512" height="512">
+                        <circle cx="256" cy="256" r="254.5" stroke="url(#blue-circle_transparent)" stroke-width="3"/>
+                    </mask>
+                    <g mask="url(#blue-circle_mask)">
+                        <circle id="blue-circle" cx="256" cy="256" r="254.5" stroke="url(#blue-circle_color)" stroke-width="3"/>
+                    </g>
+                    <defs>
+                        <linearGradient id="blue-circle_transparent" x1="512" y1="256" x2="-1.40608e-06" y2="256" gradientUnits="userSpaceOnUse">
+                            <stop offset="0.347024" stop-color="white" stop-opacity="0"/>
+                            <stop offset="1" stop-color="white"/>
+                        </linearGradient>
+                        <radialGradient id="blue-circle_color" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(148.4 140.4) rotate(73.8512) scale(386.865)">
+                            <stop stop-color="#6743F7"/>
+                            <stop offset="1" stop-color="#02E4D6"/>
+                        </radialGradient>
+                    </defs>
+                </svg>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="buy-token" id="buy-token">
+    <div class="buy-token__container container">
+        <h2 class="buy-token__title">How to buy <br>Midas token</h2>
+        <ul class="buy-token__card-wrapper">
+            <li class="buy-token__card-item">
+                <div class="buy-token__item-text" data-aos="fade-up" data-aos-offset="250">
+                    <p class="buy-token__item-step">STEP I</p>
+                    <h3 class="buy-token__item-title">Make a&nbsp;deposit</h3>
+                    <p class="buy-token__item-subtitle">For clarity, we will show examples with FTM</p>
+                    <p class="buy-token__item-description">Make a deposit in supported crypto assets (20+) on Midas platform</p>
+                </div>
+                <div class="buy-token__item-wrapper">
+                    <picture><source srcset="img/make-deposit.webp" type="image/webp"><img class="buy-token__item-img buy-token__item-img--first" src="img/make-deposit.jpg" alt="The picture shows a currency wallet, a personal address, as well as a network"></picture></img>
+                </div>
+            </li>
+            <li class="buy-token__card-item">
+                <div class="buy-token__item-text" data-aos="fade-up" data-aos-offset="250">
+                    <p class="buy-token__item-step">STEP II</p>
+                    <h3 class="buy-token__item-title">Open Midas token share</h3>
+                    <p class="buy-token__item-description">Open MIDAS token share and click on&nbsp;“Swap” button</p>
+                </div>
+                <div class="buy-token__item-wrapper">
+                    <picture><source srcset="img/token-share.webp" type="image/webp"><img class="buy-token__item-img buy-token__item-img--second" src="img/token-share.jpg" alt="currency value statistics, as well as the current balance, there are two buttons at the bottom, deposit and swap"></picture></img>
+                </div>
+            </li>
+            <li class="buy-token__card-item">
+                <div class="buy-token__item-text" data-aos="fade-up" data-aos-offset="250">
+                    <p class="buy-token__item-step">STEP III</p>
+                    <h3 class="buy-token__item-title">Make a swap</h3>
+                    <p class="buy-token__item-description">Swap your crypto to MIDAS token and&nbsp;start earning 30% APY </p>
+                    <a href="##" class="buy-token__item-button button" data-da=".buy-token__container,768,last">Go to platform -></a>
+                </div>
+                <div class="buy-token__item-wrapper">
+                    <picture><source srcset="img/make-swap.webp" type="image/webp"><img class="buy-token__item-img buy-token__item-img--third" src="img/make-swap.jpg" alt="Currency transfer to midas coins, the convert button is located at the bottom"></picture></img>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+        <section class="faq" id="faq">
+    <div class="faq__container container">
+        <h2 class="faq__title">Frequently asked questions</h2>
+        <p class="faq__subtitle">Everything you need to know about the Midas. Can’t find the answer you’re looking for? Feel free to contact me directly via:</p>
+        <ul class="faq__social-wrapper">
+            <li class="faq__social-item">
+                <a href="https://web.telegram.org/" class="faq__social-link" target="_blank">
+                    <img src="img/telegram.svg" alt="" class="faq__social-icon">
+                    <span class="faq__social-title">Telegram</span>
+                </a>
+            </li>
+            <li class="faq__social-item">
+                <a href="https://discord.com" class="faq__social-link" target="_blank">
+                    <img src="img/discord.svg" alt="" class="faq__social-icon">
+                    <span class="faq__social-title">Discord</span>
+                </a>
+            </li>
+            <li class="faq__social-item">
+                <a href="https://headphones.com" class="faq__social-link" target="_blank">
+                    <img src="img/headphones.svg" alt="" class="faq__social-icon">
+                    <span class="faq__social-title">Support</span>
+                </a>
+            </li>
+        </ul>
+        <ul data-accordions data-one-accordion class="faq__accordion-list accordion">
+            <li class="accordion__item">
+                <button tabindex="-1" type="button" class="accordion__control" data-accordion aria-label="Open the first spoiler">
+                    <h3 class="accordion__title">How to start investing</h3>
+                </button>
+                <div class="accordion__content">
+                    <span class="accordion__subtitle">In order to withdraw funds, follow these steps:</span>
+                    <ul class="accordion__list-wrapper">
+                        <li class="accordion__list-item">First, you must select the wallet address where the funds will be transferred:&nbsp;this can be the address of an external exchange, local wallet or&nbsp;other service.</li>
+                        <li class="accordion__list-item">Open your investment unit card and find there the field for the withdrawal address, and next to it the "EDIT" button.</li>
+                        <li class="accordion__list-item">Once you have provided a withdrawal address, you need to confirm the withdrawal address by email. The address will change only after your confirmation.</li>
+                    </ul>
+                </div>
+            </li>
+            <li class="accordion__item">
+                <button tabindex="-1" type="button" class="accordion__control" data-accordion aria-label="Open the second spoiler">
+                    <h3 class="accordion__title">How much money is needed to start investing?</h3>
+                </button>
+                <div class="accordion__content">
+                    <span class="accordion__subtitle">In order to withdraw funds, follow these steps:</span>
+                    <ul class="accordion__list-wrapper">
+                        <li class="accordion__list-item">First, you must select the wallet address where the funds will be transferred:&nbsp;this can be the address of an external exchange, local wallet or&nbsp;other service.</li>
+                        <li class="accordion__list-item">Open your investment unit card and find there the field for the withdrawal address, and next to it the "EDIT" button.</li>
+                        <li class="accordion__list-item">Once you have provided a withdrawal address, you need to confirm the withdrawal address by email. The address will change only after your confirmation.</li>
+                    </ul>
+                </div>
+            </li>
+            <li class="accordion__item">
+                <button tabindex="-1" type="button" class="accordion__control" data-accordion aria-label="Open the third spoiler">
+                    <h3 class="accordion__title">Is the Midas.Investments secure?</h3>
+                </button>
+                <div class="accordion__content">
+                    <span class="accordion__subtitle">In order to withdraw funds, follow these steps:</span>
+                    <ul class="accordion__list-wrapper">
+                        <li class="accordion__list-item">First, you must select the wallet address where the funds will be transferred:&nbsp;this can be the address of an external exchange, local wallet or&nbsp;other service.</li>
+                        <li class="accordion__list-item">Open your investment unit card and find there the field for the withdrawal address, and next to it the "EDIT" button.</li>
+                        <li class="accordion__list-item">Once you have provided a withdrawal address, you need to confirm the withdrawal address by email. The address will change only after your confirmation.</li>
+                    </ul>
+                </div>
+            </li>
+            <li class="accordion__item">
+                <button tabindex="-1" type="button" class="accordion__control" data-accordion aria-label="Open the fourth spoiler">
+                    <h3 class="accordion__title">How are funds withdrawn from the platform?</h3>
+                </button>
+                <div class="accordion__content">
+                    <span class="accordion__subtitle">In order to withdraw funds, follow these steps:</span>
+                    <ul class="accordion__list-wrapper">
+                        <li class="accordion__list-item">First, you must select the wallet address where the funds will be transferred:&nbsp;this can be the address of an external exchange, local wallet or&nbsp;other service.</li>
+                        <li class="accordion__list-item">Open your investment unit card and find there the field for the withdrawal address, and next to it the "EDIT" button.</li>
+                        <li class="accordion__list-item">Once you have provided a withdrawal address, you need to confirm the withdrawal address by email. The address will change only after your confirmation.</li>
+                    </ul>
+                </div>
+            </li>
+            <li class="accordion__item">
+                <button tabindex="-1" type="button" class="accordion__control" data-accordion aria-label="Open the fifth spoiler">
+                    <h3 class="accordion__title">How Midas.Investments generates yield for its customers?</h3>
+                </button>
+                <div class="accordion__content">
+                    <span class="accordion__subtitle">In order to withdraw funds, follow these steps:</span>
+                    <ul class="accordion__list-wrapper">
+                        <li class="accordion__list-item">First, you must select the wallet address where the funds will be transferred:&nbsp;this can be the address of an external exchange, local wallet or&nbsp;other service.</li>
+                        <li class="accordion__list-item">Open your investment unit card and find there the field for the withdrawal address, and next to it the "EDIT" button.</li>
+                        <li class="accordion__list-item">Once you have provided a withdrawal address, you need to confirm the withdrawal address by email. The address will change only after your confirmation.</li>
+                    </ul>
+                </div>
+            </li>
+            <li class="accordion__item">
+                <button tabindex="-1" type="button" class="accordion__control" data-accordion aria-label=" Open the sixth spoiler">
+                    <h3 class="accordion__title">What is Midas token and what are its values?</h3>
+                </button>
+                <div class="accordion__content">
+                    <span class="accordion__subtitle">In order to withdraw funds, follow these steps:</span>
+                    <ul class="accordion__list-wrapper">
+                        <li class="accordion__list-item">First, you must select the wallet address where the funds will be transferred:&nbsp;this can be the address of an external exchange, local wallet or&nbsp;other service.</li>
+                        <li class="accordion__list-item">Open your investment unit card and find there the field for the withdrawal address, and next to it the "EDIT" button.</li>
+                        <li class="accordion__list-item">Once you have provided a withdrawal address, you need to confirm the withdrawal address by email. The address will change only after your confirmation.</li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+        <footer class="footer">
+    <h2 class="footer__title">Footer navigation</h2>
+    <ul class="footer__container container">
+        <li class="footer__column">
+            <h3 class="footer__column-title">Products</h3>
+            <ul class="footer__column-list">
+                <li class="footer__column-item"><a href="#" class="footer__column-link">Platform</a></li>
+                <li class="footer__column-item"><a href="#" class="footer__column-link">Swap</a></li>
+                <li class="footer__column-item"><a href="#" class="footer__column-link">Yield Automated Strategies</a></li>
+            </ul>
+        </li>
+        <li class="footer__column">
+            <h3 class="footer__column-title">Resources</h2>
+            <ul class="footer__column-list">
+                <li class="footer__column-item"><a href="#" class="footer__column-link">Blog</a></li>
+                <li class="footer__column-item"><a href="#" class="footer__column-link">Community</a></li>
+                <li class="footer__column-item"><a href="#" class="footer__column-link">Earn Save Invest Repeat</a></li>
+            </ul>
+        </li>
+        <li class="footer__column">
+            <h3 class="footer__column-title">Help</h2>
+            <ul class="footer__column-list">
+                <li class="footer__column-item"><a href="#" class="footer__column-link">Contacts</a></li>
+                <li class="footer__column-item"><a href="#" class="footer__column-link">Support</a></li>
+                <li class="footer__column-item"><a href="#" class="footer__column-link">User greement</a></li>
+            </ul>
+        </li>
+        <li class="footer__column">
+            <h3 class="footer__column-title">Buy Midas coin</h2>
+            <ul class="footer__column-list">
+                <li class="footer__column-item"><a href="#" class="footer__column-link">Spiritswap</a></li>
+                <li class="footer__column-item"><a href="#" class="footer__column-link">Boombswap</a></li>
+            </ul>
+        </li>
+        <li class="footer__column">
+            <span class="footer__copyrights">MDF AG</span>
+            <span class="footer__copyrights">Felsenstrasse 62, 8832, Wollerau, Switzerland</span>
+            <span class="footer__copyrights">CHE-323.398.672</span>
+        </li>
+    </ul>
+</footer>
+        <script src="js/app.min.js?_v=20220805204703"></script>
+    </body>
+</html>
